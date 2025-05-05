@@ -1,0 +1,123 @@
+/* General styles for body */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 1;
+  background: linear-gradient(135deg, #e3f2fd, #e1bee7);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styles for the container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Page title styling */
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Input field styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+button:first-of-type {
+  margin-top: 5px; /* Ensures first button has proper spacing */
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* Error message styling */
+p.error-message {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+/* Styles for the dashboard */
+.dashboard {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard h2 {
+  color: #2575fc;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.dashboard p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Dashboard button */
+.dashboard button {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #ff4d4f, #c0392b);
+}
+
+.dashboard button:hover {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: scale(1.05);
+}
